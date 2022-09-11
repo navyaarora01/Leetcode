@@ -17,6 +17,7 @@ public:
             int swapNo = nums[infpt - 1];
             for(int i = infpt ; i<=n ; i++){
                 if(nums[i]- swapNo>0 && nums[i] - swapNo<min){
+                    min = nums[i] - swapNo;
                     swap(nums[infpt - 1] , nums[i]);   
                 }
             }
